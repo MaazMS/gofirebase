@@ -59,5 +59,4 @@
       1. Use a firebase package in your front end. Login the user with the package and user email/password.   
          Then you will be provided with the token, which then you set to your API request header.  
       1. Create a login API in your go server, validate the user, and then create tokens with the firebase auth.  
-      1. token, err := firebaseAuth.CustomToken(context.Background(), "firebase_UID")  
-   
+      1. token, err := firebaseAuth.CustomToken(context.Background(), "firebase_UID")
