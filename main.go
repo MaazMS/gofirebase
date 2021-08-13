@@ -15,6 +15,9 @@ func main() {
 	// create/configure database instance
 	db := config.CreateDatabase()
 
+	// configure firebase
+	firebaseAuth := config.SetupFirebase()
+
 	// set db & firebase auth to gin context with a middleware to all incoming request
 	r.Use(func(c *gin.Context) {
 		c.Set("db", db)
